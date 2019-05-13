@@ -154,6 +154,14 @@ Now lets use some of the regression methods we learnt in the datacamp course to 
 
 We shall be using a general function which shall fit the data to the algorithm, give us metrics, use the testing data to make predictions and then plot a graph using the model. It shall also rank the importance of the variables.
 
+For each model, I shall report the CV scores, ave absolute error % along with the following graphs.
+
+1. In the first graph I shall plot the actual values with the projections overlayed on top, that shall helps quickly visualize the accuracy of the model.
+
+2. In the second, I shall graph the importance each of the features have been given by the model. 
+
+3. We shall use the model to predict how the strength of the mixture changes with the amount of cement in it. We shall be using the same variables for all of the models to help compare them better.
+
 
 #### Linear regression
 
