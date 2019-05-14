@@ -47,14 +47,13 @@ First lets understand the range and the spread of the various variables.
 
 ![alt text](https://github.com/ssreekanth2000/project3/blob/master/photos/var.png)
 
+
+I have just used a binary colormap to give an idea how the magnitude of the quantities exist in the mixture. THe aggregates and the cement make up most of it.
+
+
 Some important things that we can observe, all the mixtures contain some amounts of water, cement and both kinds of the aggregates. That is what forms "basic" concrete. The other additions are either to improve strength (superplaticizer, slag) or to act as fillers to reduce cost (slag*, flyash). *Slag contributes to certain aspects of strength but also reduces the cost.
 
-Now lets just plot histograms and PMFs of the data to gain a more visual understanding.
 
-![alt text](https://github.com/ssreekanth2000/project3/blob/master/photos/hist.png)
-
-
-We can see that most of the mixes don't use the fillers (slag & flyash) and the superplasticizer and that most of the samples are tested below 50 days, which makes sense as most regulatory standards require strength to be measured on the 28th day.
 
 Lets plot the compressive strength of cement along the amount of slag in the mixture. This shall allow us to identify any trends, if we find this useful we can extend this to the other variables.
 ![alt text](https://github.com/ssreekanth2000/project3/blob/master/photos/plot.png)
