@@ -104,7 +104,6 @@ NN_model.add(Dense(256, kernel_initializer='normal',input_dim = train.shape[1], 
 NN_model.add(Dense(256, kernel_initializer='normal',activation='relu'))
 NN_model.add(Dense(256, kernel_initializer='normal',activation='relu'))
 NN_model.add(Dense(256, kernel_initializer='normal',activation='relu'))
-
 NN_model.add(Dense(512, kernel_initializer='normal',activation='relu'))
 
 
