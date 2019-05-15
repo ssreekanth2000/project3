@@ -267,7 +267,7 @@ The CV scores and the performance chart indicates that this might be the best mo
 I shall now build a neural network and fit it to our data. This seems useful to do as neural networks are great ways to explore non linear relationships between variables. 
 
 Lets build the Neural net. This is lifted from a template and is appropriate for a data set with < 20 numerical values and 1 numerical output.
-`
+```
 NN_model = Sequential()
 
 # The Input Layer :
@@ -286,8 +286,8 @@ NN_model.add(Dense(1, kernel_initializer='normal',activation='linear'))
 # Compile the network :
 NN_model.compile(loss='mean_absolute_error', optimizer='adam', metrics=['mean_absolute_error'])
 NN_model.summary()
+```
 
-`
 For the checkpoint for the neural net. We shall be monitoring the loss value. The target variable is being set to the compressive strength of the concrete.
 
 If we plot the the loss of the nueral net as its trained, this is the graph we get.
@@ -307,17 +307,16 @@ We see something that makes sense as the strength of the concrete would be expec
 
 #### Comparision of the models
 
-The average absoulute percentage error using the predictions from the ridge regression was 30.206%.
 
-The average absoulute percentage error using the predictions from the lasso regression was 30.2206%.
 
-The average absoulute percentage error using the predictions from the linear regression was 30.2086%.
-
-The average absoulute percentage error using the predictions from the K Nearest Neighbours was 24.054%.
-
-The average absoulute percentage error using the predictions from the neural net was 22.432%.
-
-The average absoulute percentage error using the predictions from the decision tree regression was 14.451%.
+| Model         | Average absolute percentage error   | 
+| ------------- |:-------------:| 
+| ridge regression      | 30.206%.| 
+| lasso regression    | 30.220%.     |  
+| linear regression | 30.208%.     |   
+|          K Nearest Neighbours     |   24.054%.            |
+| neural net              |      22.432%.         |
+|  decision tree regression             |      22.432%.         |
 
 Looking at the average errors, the linear regression models did the worst job, with regularization not helping at all. The KNN and the neural net did a better job but the best result was from the decision tree regression model
 
